@@ -1,0 +1,57 @@
+/*The footer is very similar to the navbar. Make the wrapper a flexbox, align the items in the center and add some extra styles*/
+#footer .footerWrapper{
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 9, 71);
+    padding: 10px 0px;/*Vertical and horizontal*/
+    /*The layer that this element is in*/
+    z-index: 100;
+}
+
+
+#footer.outterWrapper{  
+    width: 100%;
+    bottom: 0px;
+}
+
+/*Make this div a flexbox, position the items within, and give it a width similar to the width of the navlinks div*/
+#footer .socialLinks{
+    display: flex;
+    align-items: center;
+    width: 455px;
+}
+
+
+#footer .navLinks{
+    display: flex;
+    align-items: center;
+    
+}
+
+#footer .socialIcon{
+    width: 35px;
+    /*Height auto so that icons dont stretch or get distorted*/
+    height: auto;
+    margin-left: 15px;
+
+}
+
+/*Style the page name tabs in the footer. Make the cursor a pointer when hovering over the tabs*/
+#footer .pageName{
+    margin-right: 15px;/*Without a margin right, the page names will go off the screen of the page*/
+    font-family: var(--font);/*Uses the font variable created in App*/
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*When hovered over, the page name tabs should be red*/
+#footer .pageName:hover{
+    color: rgb(214, 98, 98);
+}
+
+/*Give the div containing the copyright info margins in the top right bottom and left*/
+.copyright {
+    margin: 0px auto 0px auto;
+    color: white;
+}

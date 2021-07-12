@@ -1,0 +1,48 @@
+/*Make the wrapper a flexbox, align the items in the center and add some extra styles*/
+#nav .navWrapper{
+    display: flex;
+    align-items: center;
+    background-color: rgb(15, 9, 71);
+    padding: 10px 0px;/*Vertical and horizontal*/
+    /*The layer that this element is in*/
+    z-index: 100;
+}
+
+#nav.outterWrapper{
+    position: fixed;
+    width: 100%;
+}
+
+/*Make this div a flexbox, position the items within*/
+#nav .socialLinks{
+    display: flex;
+    align-items: center;
+}
+
+#nav .navLinks{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#nav .socialIcon{
+    width: 35px;
+    /*Height auto so that icons dont stretch or get distorted*/
+    height: auto;
+    margin-left: 15px;
+
+}
+
+/*Style the page name tabs in the navbar. Make the cursor a pointer when hovering over the tabs*/
+#nav .pageName{
+    margin-right: 15px;
+    font-family: var(--font);/*Uses the font variable created in App*/
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*When hovered over, the page name tabs should be red*/
+#nav .pageName:hover{
+    color: rgb(214, 98, 98);
+}

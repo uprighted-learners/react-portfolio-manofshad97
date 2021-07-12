@@ -1,0 +1,41 @@
+/*Syle the intro div on the home page.*/
+.intro{
+    background-image: url("/homegif.gif");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Set the size of the div holding the text*/
+.introText{
+    width: 500px;
+}
+
+/*Style the div that says 'Hi my name is Shadman Ahmed'*/
+.name{
+    font-family: var(--font);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+
+}
+
+/*Style the text underneath "Hi my name is Shadman Ahmed*/
+.description{
+    font-family: var(--font);
+    font-size: 22px;
+    color: white;
+    text-align: right;
+}
+
+/*Resize the image*/
+.profileImg{
+    width: 300px;
+    height: auto;
+    /*Round off half of the image in order to create a circle*/
+    border-radius: 50%;
+    margin-left: 25px;
+}
