@@ -1,0 +1,32 @@
+/*Make the about div a flexbox and change its background color*/
+#about{
+    display: flex;
+    background-color: rgb(212, 212, 212);
+
+}
+
+/*Resize the Beavis gif*/
+.gif{
+    width: 500px;
+
+}
+
+/*Use the font variable created and resize the font*/
+.aboutDesc {
+    font-family: var(--font);
+    font-size: 20px;
+    
+
+}
+
+/*Give the title a size, font style, and make it bold*/
+.aboutTitle{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--secondaryFont);
+}
+
+/*Give the wrapper some horizontal padding*/
+.aboutWrapper{
+    padding: 0px 30px;
+}

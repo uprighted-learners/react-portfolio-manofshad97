@@ -1,0 +1,68 @@
+/*Give the hobbies page a gif background and add some padding on the bottom to remove some white space that would show up at the bottom of the section*/
+#hobbies {
+    background-image: url("/projectbackground2.gif");
+    padding-bottom: 10px;
+}
+
+/*Style the main hobbies section title*/
+.hobbiesTitle{
+    text-align: center;
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+/*Style the hobbies intro*/
+.hobbiesDesc{
+    text-align: center;
+    color: white;
+    font-family: var(--font);
+    font-size: 25px;
+
+
+}
+
+/*Resize the soccer player image and push it to the left. Add a margin to put space between the image and text next to it*/
+.soccer{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+/*Resize the basektball player image and push it to the left. Add a margin to put space between the image and text next to it*/
+.basketball{
+    width: 300px;
+    height: 225px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+/*Resize the football player image and push it to the left. Add a margin to put space between the image and text next to it*/
+.football{
+    width: 300px;
+    height: 185px;
+    float: left;
+    margin-right: 20px;
+}
+
+/*Change the color of the span based on which team/player it is referring to*/
+.giantsColor{
+    color: blue;
+}
+
+.lewaColor{
+    color: red;
+}
+
+.knicksColor{
+    color: rgb(255, 136, 0)
+}
+
+/*Style the p tag with the descriptions */
+.playerDesc{
+    color: white;
+    font-size: 28px;
+}
