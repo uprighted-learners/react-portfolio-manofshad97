@@ -8,30 +8,35 @@ the message texbox because it has a text area tag instead of input. The actions 
 
 function Contact() {
   return (
+    // Contact container
     <div id="contact">
+      {/* Inner div containing the form */}
       <div className="inner">
         <div>
           <form>
+            {/* Form title */}
             <legend>Contact Me</legend>
-
+            {/* Textboxes */}
             <div className="fields">
-
-
+              {/* Name textbox */}
               <div className="emailname">
                 <div className="nameDiv">
                   <label for="name">Name</label>
                   <input type="text" />
                 </div>
+                {/* Email textbox */}
                 <div className="emailDiv">
                   <label for="email">Email</label>
                   <input type="text" />
                 </div>
               </div>
+              {/* Message textbox */}
               <div className="messageDiv">
                 <label>Message</label>
                 <textarea name="message" id="message" rows="6"></textarea>
               </div>
             </div>
+            {/* Form action buttons */}
             <ul className="actions">
               <li><button type="submit" className="submitButton">Send Message</button></li>
               <li><button type="reset">Clear</button></li>

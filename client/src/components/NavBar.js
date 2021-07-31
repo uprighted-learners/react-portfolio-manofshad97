@@ -15,10 +15,11 @@ function NavBar() {
     }
 
     return (
+        // Outter wrapper div
         <div id="nav" className="outterWrapper">
 
             <div className="navWrapper">
-
+                 {/* Div that holds the social links anchor tags. Each one contains a link to a social media website and contains an svg. Target is set to _blank in order to open in a new tab when clicked. */}
                 <div className="socialLinks">
 
                     <a href="https://facebook.com" target="_blank">
@@ -38,7 +39,8 @@ function NavBar() {
                     </a>
 
                 </div>
-
+                
+                {/* Create a navbar div with p tags for navbar tabs. Give all p tags the same className for styling and give them an onClick to run the scrollTo function when clicked. */}
                 <div className="navLinks">
                     <p className="pageName" onClick={() => scrollTo("#home")} href="/">Home</p>
                     <p className="pageName" onClick={() => scrollTo("#about")} href="/about">About</p>

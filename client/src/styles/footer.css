@@ -21,7 +21,7 @@
     width: 455px;
 }
 
-
+/* Make the navLinks div a flexbox and make sure the items are vertically centered  */
 #footer .navLinks{
     display: flex;
     align-items: center;

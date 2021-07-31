@@ -9,7 +9,7 @@ function Footer() {
 
     function scrollTo(id) {
         window.scrollTo({
-            /*Get the element with the provided className using querySelector. Add in the scroll offset*/
+            /*Get the element with the provided className using querySelector. Add in the scroll offset. Set the scroll behavior to smooth for a more smooth scrolling experience*/
             top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset -75,
             behavior: "smooth"
         })
@@ -17,10 +17,11 @@ function Footer() {
     }
 
     return (
+        // Outter wrapper div
         <div id="footer" className="outterWrapper">
-
+            
             <div className="footerWrapper">
-
+                {/* Div that holds the social links anchor tags. Each one contains a link to a social media website and contains an svg. Target is set to _blank in order to open in a new tab when clicked. */}
                 <div className="socialLinks">
 
                     <a href="https://facebook.com" target="_blank">
@@ -41,10 +42,12 @@ function Footer() {
 
                 </div>
 
+                {/* Copyright div that just holds a span with text */}
                 <div className="copyright">
                     <span>Contact: shadman559@hotmail.com | &copy; COPYRIGHT Shadman Ahmed 2021 | All Rights Reserved.</span>
                 </div>
 
+                {/* Have a navbar div apart of the footer as well. Give all p tags the same classname for styling and give them an onClick to run the scrollTo function when clicked. */}
                 <div className="navLinks">
                     <p className="pageName" onClick={() => scrollTo("#home")} href="/">Home</p>
                     <p className="pageName" onClick={() => scrollTo("#about")} href="/about">About</p>

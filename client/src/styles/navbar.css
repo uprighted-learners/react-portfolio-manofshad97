@@ -19,6 +19,7 @@
     align-items: center;
 }
 
+/* Make the navLinks div a flexbox and make sure the items are vertically centered  */
 #nav .navLinks{
     display: flex;
     align-items: center;
