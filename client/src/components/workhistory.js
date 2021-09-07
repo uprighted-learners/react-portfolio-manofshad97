@@ -16,7 +16,7 @@ function WorkHistory() {
 
       {/* The text under the Goals heading */}
       <p className="resumeDesc resumeIntro">
-        I am excited to be pursing a career in software development leveraging 8+ years of tutoring, 2 years of Computer Science coursework at NYU, and my recent coding bootcamp experience. In addition to my strong technical skills I also have significant experience teaching and leading group projects.
+        I am excited to be pursing a career in software development leveraging 8+ years of tutoring, 4 years of Computer Science coursework at NYU, and my recent coding bootcamp experience. In addition to my strong technical skills I also have significant experience teaching and leading group projects.
       </p>
       {/* Education heading */}
       <p className="resumeHeading">
@@ -26,7 +26,7 @@ function WorkHistory() {
       <p className="resumeDesc">
         <ul>
           <li className="bullet">Rigorous College Preparatory Coursework	- Bronx High School of Science (BHSS)	Jun 2015</li>
-          <li className="bullet">Computer Science Coursework toward B.S.	New York University (NYU)	Sep 2015 – May 2017</li>
+          <li className="bullet">Computer Science Coursework toward B.S.	New York University (NYU)	Sep 2015 – Dec 2020</li>
           <li className="bullet">Full Stack Web Developer (480+ hours)	Burlington Code Academy	(expected) Aug 2021</li>
         </ul>
       </p>
@@ -54,8 +54,8 @@ function WorkHistory() {
     {/* Technical skills paragraph tag that holds multiple unordered list items for various technical skills*/}
       <p className="resumeDesc">
         <li className="bullet">Languages:	JavaScript | HTML | CSS | Python</li>
-        <li className="bullet">Frameworks:	Node.js | React | MongoDB | WebAPI</li>
-        <li className="bullet">Database Management:	MySQL | Amazon Redshift (familiar)</li>
+        <li className="bullet">Frameworks:	Node.js | React | WebAPI</li>
+        <li className="bullet">Database Management:	MySQL | MongoDB | Amazon Redshift (familiar)</li>
         <li className="bullet">Source Control:	Git | GitHub</li>
         <li className="bullet">Development:	Visual Studio | WebStorm</li>
       </p>
