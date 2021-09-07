@@ -5,7 +5,7 @@ import '../styles/projects.css';
 
 function Projects() {
   /*Create an image array. This will give each repo a picture with the corresponding index in the array. */
-  let imgArr = ["/guessnumber.png", "restaurant.png", "tictac.png", "/zorkington.png"]
+  let imgArr = ["/chatapp.png", "/guessnumber.png", "restaurant.png", "tictac.png", "/yelpington.png", "/zorkington.png"]
   /*gitHubData is the array of repos and setGitHubData is our updater function to change state. 
   Later in the projectList div, gitHubData is looped over using map and each repo in that array will print out its name and description using p tags */
   const [githubData, setGithubData] = useState([])
@@ -45,8 +45,11 @@ function Projects() {
             </p>
 
             {/* .full_name is a property in githubs API */}
+            {(repo.name === "Chat-App")?
+              <a href={"https://limitless-headland-30461.herokuapp.com/"} target="_blank" className="repoLink">Live Demo</a>
+            : null}
             <a href={"https://github.com/" + repo.full_name} target="_blank" className="repoLink">
-              Link
+              GitHub Link
             </a>
 
             {/* Use the index variable to get the corresponding image in the images array for each repo */}
