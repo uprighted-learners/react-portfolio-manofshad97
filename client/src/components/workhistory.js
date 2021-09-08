@@ -65,7 +65,7 @@ function WorkHistory() {
       <p className="resumeHeading">Download my resume by clicking on the image below:</p>
       
       {/* Anchor tag that has an href of the resume filename. Download attribute is used so that when the image is clicked, the file is downloaded */}
-      <a href="/shadmanresume.docx" download>
+      <a href="/shadmansresume.docx" download>
         <img className="resumeDownload" src="/resume.png" alt="My Personal Resume Screenshot" />
       </a>
 
