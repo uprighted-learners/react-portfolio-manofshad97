@@ -45,9 +45,15 @@ function Projects() {
             </p>
 
             {/* .full_name is a property in githubs API */}
+            {(repo.name === "Yelpington-App")?
+              <a href={"https://blooming-lowlands-72131.herokuapp.com/"} target="_blank" className="repoLink">Live Demo</a>
+            : null}
+
             {(repo.name === "Chat-App")?
               <a href={"https://limitless-headland-30461.herokuapp.com/"} target="_blank" className="repoLink">Live Demo</a>
             : null}
+
+
             <a href={"https://github.com/" + repo.full_name} target="_blank" className="repoLink">
               GitHub Link
             </a>
