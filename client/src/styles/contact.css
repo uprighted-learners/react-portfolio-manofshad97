@@ -3,6 +3,7 @@
     background-color: rgb(15, 9, 71);
     color: white;
     padding: 40px 0px;
+    scroll-margin-top: 2rem;
 }
 
 /*Make label tags block elements. Add a margin on the bottom to fix an issue that kept showing a small amount of white space at the top*/

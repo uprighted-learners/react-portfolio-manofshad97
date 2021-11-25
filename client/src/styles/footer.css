@@ -55,3 +55,19 @@
     margin: 0px auto 0px auto;
     color: white;
 }
+
+@media (max-width: 600px){
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dividers{
+        display: none;
+    }
+
+    .hideText{
+        display: none;
+    }
+}

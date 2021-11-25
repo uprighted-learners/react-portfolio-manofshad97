@@ -38,7 +38,7 @@ function Contact() {
             </div>
             {/* Form action buttons */}
             <ul className="actions">
-              <li><button type="submit" className="submitButton">Send Message</button></li>
+              <li><button type="submit" className="submitButton">Send <span className="hideText">Message</span></button></li>
               <li><button type="reset">Clear</button></li>
             </ul>
           </form>

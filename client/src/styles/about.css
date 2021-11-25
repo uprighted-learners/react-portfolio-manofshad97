@@ -30,3 +30,9 @@
 .aboutWrapper{
     padding: 0px 30px;
 }
+
+@media (max-width: 600px){
+    .gif{
+        width: inherit;
+    }
+}

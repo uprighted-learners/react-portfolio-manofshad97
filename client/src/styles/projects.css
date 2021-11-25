@@ -64,3 +64,11 @@
     font-size: 20px;
     margin-bottom: 15px;
 }
+
+@media (max-width:600px) {
+    .repo{
+        margin: 0;
+        width: inherit;
+        border-radius: 0;
+    }
+}

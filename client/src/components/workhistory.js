@@ -36,7 +36,7 @@ function WorkHistory() {
         Work Experience
       </p>
 
-    {/* Work experience paragraph tag that holds multiple unordered list items for prior work experience */}
+      {/* Work experience paragraph tag that holds multiple unordered list items for prior work experience */}
       <p className="resumeDesc">
         <li className="bullet">Engineering Intern at Raasforce - Performed database management using mySQL and Amazon Redshift | May 2019 - Jan 2020</li>
         <li className="bullet">Private Tutor- College Math, Finance, and Writing Tutor | 2012 – Present</li>
@@ -51,7 +51,7 @@ function WorkHistory() {
         Technical Skills
       </p>
 
-    {/* Technical skills paragraph tag that holds multiple unordered list items for various technical skills*/}
+      {/* Technical skills paragraph tag that holds multiple unordered list items for various technical skills*/}
       <p className="resumeDesc">
         <li className="bullet">Languages:	JavaScript | HTML | CSS | Python</li>
         <li className="bullet">Frameworks:	Node.js | React | WebAPI</li>
@@ -61,15 +61,18 @@ function WorkHistory() {
       </p>
 
 
-      {/* P tag with instructions on how to download resume */}
-      <p className="resumeHeading">Download my resume by clicking on the image below:</p>
-      
-      {/* Anchor tag that has an href of the resume filename. Download attribute is used so that when the image is clicked, the file is downloaded */}
-      <a href="/shadman's_resume.docx" download>
-        <img className="resumeDownload" src="/resume.png" alt="My Personal Resume Screenshot" />
-      </a>
 
-      
+      {/* Anchor tag that has an href of the resume filename. Download attribute is used so that when the image is clicked, the file is downloaded */}
+      <div className="resumeCenter">
+        {/* P tag with instructions on how to download resume */}
+        <p className="resumeHeading">Download my resume by clicking on the image below:</p>
+        <a href="/shadman's_resume.docx" download>
+          <img className="resumeDownload" src="/resume.png" alt="My Personal Resume Screenshot" />
+        </a>
+      </div>
+
+
+
 
     </div>
   );

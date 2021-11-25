@@ -16,7 +16,7 @@ function Main() {
       {/* Navbar component */}
       <NavBar />
       {/* Intro div that holds the introductory text alongside the image of me */}
-      <div id="home" className="intro">
+      <div id="home" className="intro mobile">
         {/* Intro text div. Holds two p tags for a line introducing myself as well as a brief description of me and my goals. */}
         <div className="introText">
           <p className="name">Hi, my name is Shadman Ahmed</p>

@@ -12,10 +12,10 @@ function Hobbies() {
       {/* Hobbies intro just below the title */}
       <h2 className="hobbiesDesc">In my spare time, I enjoy watching and playing a multitude of sports.</h2>
 
-      {/* Image for Robert Lewandowski, the soccer player */}
-      <img className="soccer" src="/lewa.jpg" alt="Lewandowski Picture" />
       {/* Give each hobby its own wrapper div */}
       <div className="hobbiesWrapper">
+        {/* Image for Robert Lewandowski, the soccer player */}
+        <img className="soccer" src="/lewa.jpg" alt="Lewandowski Picture" />
         {/*P tag representing the player description  */}
         <p className="playerDesc">
           {/* Put the team name in a span in order to make it a different color from the rest of the text */}
@@ -24,17 +24,20 @@ function Hobbies() {
 
       </div>
 
-    {/* Image for RJ Barret, the basketball player */}
-      <img className="basketball" src="/rj.jpg" alt="RJ Barret Picture" />
+
       <div className="hobbiesWrapper">
+        {/* Image for RJ Barret, the basketball player */}
+        <img className="basketball" src="/rj.jpg" alt="RJ Barret Picture" />
         <p className="playerDesc">
           <span className="knicksColor">The Knicks</span> are my favorite basketball team. RJ Barret is my favorite Knicks player. Born in Toronto as the son of former basketball player Rowan Barrett, Barrett shone at St. Marcellinus Secondary School in Mississauga, Ontario, before transferring to Montverde Academy in Montverde, Florida. He was a five-star recruit and the consensus top recruit in the 2018 class, earning Naismith Prep Player of the Year and Gatorade National Player of the Year accolades in his final high school season whilst playing as a shooting guard a majority of the season. He was ranked the top player in his class by all recruiting services and was the first player since LeBron James to sweep all major awards in high school and win the national championship.
         </p>
       </div>
 
-      {/* Image for Saquon Barkley, the American football player*/}
-      <img className="football" src="/saquon.jpg" alt="Saquon Barkley Picture" />
+
+
       <div className="hobbiesWrapper">
+        {/* Image for Saquon Barkley, the American football player*/}
+        <img className="football" src="/saquon.jpg" alt="Saquon Barkley Picture" />
         <p className="playerDesc">
           <span className="giantsColor">The Giants</span> are my favorite American football team. Saquon Barkley is my favorite Giants player. He plays as a running back. His electric runs that stop defenders from tackling him are what sparked my interest in him. As a rookie during the 2018 NFL season Barkley set numerous league and franchise records while on his way to a 1,300+ yard rushing season and a Pro Bowl nod. In 2018, Barkley set multiple league records, one of which was recording the most receptions by a rookie running back. Barkley also set three franchise records for rookies: most rushing touchdowns, most rushing yards, and most total touchdowns.
         </p>

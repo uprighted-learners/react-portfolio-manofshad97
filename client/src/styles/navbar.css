@@ -47,3 +47,60 @@
 #nav .pageName:hover{
     color: rgb(214, 98, 98);
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(144, 144, 144);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(15, 9, 71);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(15, 9, 71);
+    color: white;
+  }
+
+  #myLinks{
+      text-align: center;
+  }
+
+@media (max-width: 600px){
+    #nav {
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+
+    
+}

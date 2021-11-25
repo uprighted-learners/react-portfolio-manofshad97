@@ -9,7 +9,7 @@ a p tag containing the about me description
 function About() {
   
   return (
-    <div id="about">
+    <div id="about" className="mobile">
       {/* Represents the beavis gif. Gave it a classname of gif so it can be styled later */}
       <img className="gif" src="/computergif.gif" alt="Computer Gif" />
       {/* about wrapper div */}

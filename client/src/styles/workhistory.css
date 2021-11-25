@@ -12,7 +12,6 @@
     font-family: var(--font);
     font-size: 30px;
     font-weight: bold;
-    margin-right: auto;
     color: white;
 
 }
@@ -46,7 +45,17 @@
 
 /*Resize the resume picture. Could not get float to work so had to add an abnormally large right margin*/
 .resumeDownload{
+
     width: 300px;
     height: auto;
-    margin-right: 1500px;
+    padding-bottom: 2rem;
+
 }
+
+.resumeCenter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+

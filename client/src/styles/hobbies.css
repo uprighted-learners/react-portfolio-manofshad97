@@ -1,7 +1,7 @@
 /*Give the hobbies page a gif background and add some padding on the bottom to remove some white space that would show up at the bottom of the section*/
 #hobbies {
     background-image: url("/projectbackground2.gif");
-    padding-bottom: 10px;
+
 }
 
 /*Style the main hobbies section title*/
@@ -26,26 +26,29 @@
 
 /*Resize the soccer player image and push it to the left. Add a margin to put space between the image and text next to it*/
 .soccer{
-    width: 300px;
-    float: left;
+    max-width: 18.5rem;
+    width: 100%;
+    height: auto;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 /*Resize the basektball player image and push it to the left. Add a margin to put space between the image and text next to it*/
 .basketball{
-    width: 300px;
-    height: 225px;
-    float: left;
+    max-width: 18.5rem;
+    width: 100%;
+    height: auto;
     margin-right: 20px;
-
+    object-fit: cover;
 }
 
 /*Resize the football player image and push it to the left. Add a margin to put space between the image and text next to it*/
 .football{
-    width: 300px;
-    height: 185px;
-    float: left;
+    max-width: 18.5rem;
+    width: 100%;
+    height: auto;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 /*Change the color of the span based on which team/player it is referring to*/
@@ -65,4 +68,27 @@
 .playerDesc{
     color: white;
     font-size: 28px;
+}
+
+.hobbiesWrapper{
+    display: flex;
+}
+
+@media (max-width: 600px){
+    .nameDiv{
+        margin-right: 1rem;
+    }
+
+    .hobbiesWrapper{
+        flex-direction: column;
+    }
+
+    .playerDesc{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .soccer, .basketball, .football{
+        max-width: none !important;
+    }
 }
