@@ -89,6 +89,6 @@
     }
 
     .soccer, .basketball, .football{
-        max-width: none !important;
+        max-width: none;
     }
 }

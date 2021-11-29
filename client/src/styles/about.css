@@ -35,4 +35,8 @@
     .gif{
         width: inherit;
     }
+
+    .aboutDesc{
+        text-align: justify;
+    }
 }
