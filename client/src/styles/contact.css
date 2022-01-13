@@ -1,71 +1,128 @@
 /*Give the contact div a background color, make all text white and give it some vertical padding*/
-#contact{
-    background-color: rgb(15, 9, 71);
-    color: white;
-    padding: 40px 0px;
-    scroll-margin-top: 2rem;
+#contact {
+  background-color: white;
+  color: black;
+  padding: 40px 0px;
+  scroll-margin-top: 2rem;
+  height: 100vh;
 }
 
 /*Make label tags block elements. Add a margin on the bottom to fix an issue that kept showing a small amount of white space at the top*/
 #contact label {
-    display: block;
-    margin-bottom: 15px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 /*Style the title on the contact section. Make it a block line element, center the text, add a font size, font type*/
-#contact legend{
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    font-family: var(--font);
-    margin-bottom: 30px;
+#contact legend {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-#contact input, #contact textarea{
-    width: 100%;
-    font-size: 35px;
-
+#contact input,
+#contact textarea {
+  width: 100%;
+  font-size: 35px;
+  border: 2px solid black;
 }
 
 /*Give the form padding on both left and right. Otherwise the text boxes would stretch out the entire screen*/
-#contact form{
-    padding-left: 15%;
-    padding-right: 15%;
+#contact form {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /*The container for the name, email, and message divs. Make it a flexbox, put space between the items and give it a margin bottom to add some space between the name textbox and message textbox*/
 .emailname {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-
-.nameDiv{
-    width: 90%;
-
+.nameDiv {
+  width: 90%;
 }
 /*Float left on both of these divs so that they line up next to each other in a row*/
-.nameDiv, .emailDiv{
-    width: 49%;
-    float: left;
+.nameDiv,
+.emailDiv {
+  width: 49%;
+  float: left;
 }
 
 /*Style the buttons. Turn the actions div into a flexbox and center the items within*/
 #contact .actions {
-    list-style: none;
-    display: flex;
-    padding-left: 1px;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  padding-left: 1px;
+  justify-content: center;
 }
 
 /*Set the font size of the button text and add some vertical and horizontal padding to add some space around the text in the buttons*/
-.actions  button {
-    font-size: 25px;
-    padding: 15px 35px;
+.actions button {
+  font-size: 25px;
+  padding: 15px 35px;
 }
 
 /*Give the submit button a right margin to put space between the clear and submit buttons*/
 .submitButton {
-    margin-right: 25px;
+  margin-right: 25px;
+}
+
+.contactGifFlex{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.contactGif{
+  position: absolute;
+  top: 2rem;
+  height: 10rem;
+  width: auto;
+}
+
+button{
+  background-color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+button:hover{
+  color: white;
+  background-color: black;
+}
+
+
+@media (max-width: 600px) {
+  #contact {
+    width: 162vw;
+    margin-top: 20rem;
+  }
+
+  .nameDiv {
+    margin-right: 2rem;
+  }
+
+  .inner {
+    margin-top: -20rem;
+  }
+
+  .fields {
+    margin-top: 7rem;
+  }
+
+  .contactGif{
+    position: absolute;
+    top: 10rem;
+    height: 15rem;
+  }
+
+  label{
+    font-size: 1.3rem;
+  }
 }

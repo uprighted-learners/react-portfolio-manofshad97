@@ -15,7 +15,7 @@ function Contact() {
         <div>
           <form>
             {/* Form title */}
-            <legend>Contact Me</legend>
+            <legend>Let's Chat!</legend>
             {/* Textboxes */}
             <div className="fields">
               {/* Name textbox */}
@@ -41,6 +41,9 @@ function Contact() {
               <li><button type="submit" className="submitButton">Send <span className="hideText">Message</span></button></li>
               <li><button type="reset">Clear</button></li>
             </ul>
+            <div className='contactGifFlex'>
+            <img className='contactGif' src="contactimage.gif"/>
+            </div>
           </form>
         </div>
       </div>

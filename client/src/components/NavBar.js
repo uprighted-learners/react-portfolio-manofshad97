@@ -40,13 +40,15 @@ function NavBar() {
 
                 <div className="navWrapper">
                     {/* Div that holds the social links anchor tags. Each one contains a link to a social media website and contains an svg. Target is set to _blank in order to open in a new tab when clicked. */}
-                    <div className="socialLinks">
+                    <div className="logo">
 
-                        <a href="https://facebook.com" target="_blank">
-                            <img className="socialIcon" src="/fbicon.svg" alt="Facebook Icon" />
+                        <a onClick={() => {window.location.reload()}}>
+                            <img className="logoIcon" src="/newlogo.svg" alt="Logo Icon" />
                         </a>
+                        <img className="logoGif" src="/logoGif.gif" alt="Logo Icon" />
+                        <p className='logoTitle'>Shadman</p>
 
-                        <a href="https://instagram.com" target="_blank">
+                        {/* <a href="https://instagram.com" target="_blank">
                             <img className="socialIcon" src="/igicon.svg" alt="Instagram Icon" />
                         </a>
 
@@ -56,7 +58,7 @@ function NavBar() {
 
                         <a href="https://github.com/manofshad97" target="_blank">
                             <img className="socialIcon" src="/githubicon.svg" alt="Github Icon" />
-                        </a>
+                        </a> */}
 
                     </div>
 
@@ -66,7 +68,7 @@ function NavBar() {
                         <p className="pageName" onClick={() => scrollTo("#about")} href="/about">About</p>
                         <p className="pageName" onClick={() => scrollTo("#projects")} href="/projects">Projects</p>
                         <p className="pageName" onClick={() => scrollTo("#workhistory")} href="/workhistory">WorkHistory</p>
-                        <p className="pageName" onClick={() => scrollTo("#hobbies")} href="/hobbies">Hobbies</p>
+                        <p className="pageName" onClick={() => scrollTo("#hobbies")} href="/hobbies">Tech Stack</p>
                         <p className="pageName" onClick={() => scrollTo("#contact")} href="/contact">Contact</p>
                     </div>
                 </div>
@@ -74,15 +76,16 @@ function NavBar() {
 
             </div>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-
-            <div class="topnav">
-                <a href="#home" class="active">Navigation</a>
+            
+            <div className="whiteSpace"></div>
+            <div className="topnav">
+                <a class="active"><img className="logoIcon" src="/newlogo.svg" alt="Logo Icon" /></a>
                 <div id="myLinks">
                     <p className="pageName" onClick={() => scrollToMobile("#home")} href="/">Home</p>
                     <p className="pageName" onClick={() => scrollToMobile("#about")} href="/about">About</p>
                     <p className="pageName" onClick={() => scrollToMobile("#projects")} href="/projects">Projects</p>
                     <p className="pageName" onClick={() => scrollToMobile("#workhistory")} href="/workhistory">WorkHistory</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#hobbies")} href="/hobbies">Hobbies</p>
+                    <p className="pageName" onClick={() => scrollToMobile("#hobbies")} href="/hobbies">Tech Stack</p>
                     <p className="pageName" onClick={() => scrollToMobile("#contact")} href="/contact">Contact</p>
                 </div>
                 <a href="javascript:void(0);" class="icon" onClick={() => myFunction()}>

@@ -1,94 +1,145 @@
-/*Give the hobbies page a gif background and add some padding on the bottom to remove some white space that would show up at the bottom of the section*/
 #hobbies {
-    background-image: url("/projectbackground2.gif");
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+  /* border: 2px solid black; */
 }
 
 /*Style the main hobbies section title*/
-.hobbiesTitle{
-    text-align: center;
-    color: white;
-    font-family: var(--font);
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 0;
+.hobbiesTitle {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 1.3rem;
 }
 
 /*Style the hobbies intro*/
-.hobbiesDesc{
-    text-align: center;
-    color: white;
-    font-family: var(--font);
-    font-size: 25px;
-
-
+.hobbiesDesc {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 25px;
+  position: absolute;
+  top: 8.5rem;
 }
 
-/*Resize the soccer player image and push it to the left. Add a margin to put space between the image and text next to it*/
-.soccer{
-    max-width: 18.5rem;
-    width: 100%;
-    height: auto;
-    margin-right: 20px;
-    object-fit: cover;
+/*Resize the icon player image and push it to the left. Add a margin to put space between the image and text next to it*/
+.icon {
+  max-width: 10rem;
+  width: 100%;
+  height: auto;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  object-fit: fill;
 }
 
-/*Resize the basektball player image and push it to the left. Add a margin to put space between the image and text next to it*/
-.basketball{
-    max-width: 18.5rem;
-    width: 100%;
-    height: auto;
-    margin-right: 20px;
-    object-fit: cover;
+.hobbiesWrapper {
+  display: flex;
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 
-/*Resize the football player image and push it to the left. Add a margin to put space between the image and text next to it*/
-.football{
-    max-width: 18.5rem;
-    width: 100%;
-    height: auto;
-    margin-right: 20px;
-    object-fit: cover;
+.stackContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*Change the color of the span based on which team/player it is referring to*/
-.giantsColor{
-    color: blue;
+.skillName {
+  text-align: center;
+  font-weight: 500;
 }
 
-.lewaColor{
-    color: red;
+.skillType{
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 
-.knicksColor{
-    color: rgb(255, 136, 0)
+.mainFlex {
+  width: 80%;
 }
 
-/*Style the p tag with the descriptions */
-.playerDesc{
-    color: white;
-    font-size: 28px;
+.css {
+  transform: scale(1.2, 1.2);
 }
 
-.hobbiesWrapper{
-    display: flex;
+.tailwind {
+  padding: 0 1rem;
 }
 
-@media (max-width: 600px){
-    .nameDiv{
-        margin-right: 1rem;
-    }
+.tailwind + p{
+  padding-top: 0.85rem;
+}
 
-    .hobbiesWrapper{
-        flex-direction: column;
-    }
+.node + p,
+.node {
+  padding-right: 2.5rem;
+}
 
-    .playerDesc{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+.sql {
+  transform: scale(1.1, 1.1);
+}
 
-    .soccer, .basketball, .football{
-        max-width: none;
-    }
+.sass {
+  padding-left: 2rem;
+}
+
+@media (max-width: 600px) {
+
+  .skillType{
+    font-size: 1.2rem;
+  }
+
+  .skillName{
+    font-weight: bold;
+  }
+
+  .node + p,
+  .mySQL + p {
+    margin-top: 1.5rem;
+  }
+
+  .node + p,
+  .node {
+    padding-right: 0;
+  }
+
+  .mainFlex {
+    width: 95%;
+  }
+
+  #hobbies {
+    width: 162vw;
+    margin-top: 10rem;
+  }
+
+  .tailwind,
+  .tailwind + p {
+    display: none;
+  }
+
+  .mui {
+    padding: 0 2rem;
+  }
+
+  .mui + p {
+    margin-top: 11px;
+  }
+
+  .sass {
+    padding-left: 0;
+  }
+
+  .sass + p {
+    margin-top: 1.3rem;
+  }
+
+  .api + p{
+      margin-top: 0.5rem;
+  }
 }

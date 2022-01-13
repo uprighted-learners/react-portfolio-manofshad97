@@ -1,74 +1,81 @@
 /*Style the p tag containing the repo name*/
-.repoName{
-    font-family: var(--font);
-    font-size: 20px;
-
+.repoName {
+  font-family: var(--font);
+  font-size: 20px;
 }
 
 /*Style the p tag containing the repo description*/
-.repoDescription{
-    font-family: var(--font);
-    font-size: 17px;
-    text-align: center;
-
+.repoDescription {
+  font-family: var(--font);
+  font-size: 17px;
+  text-align: center;
 }
 
 /*Style the main title on the projects section*/
-.projectTitle{
-    font-family: var(--font);
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
+.projectTitle {
+  font-family: Roboto, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
 }
 
 /*Style the div containing the projects*/
-.projectList{
-    display: flex;
-    flex-wrap: wrap;/*Use flex wrap so that all projects dont try to fit on one line*/
-    justify-content: center;
-
+.projectList {
+  display: flex;
+  flex-wrap: wrap; /*Use flex wrap so that all projects dont try to fit on one line*/
+  justify-content: center;
 }
 
 /*Style the main projects container*/
-#projects{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("/projectbackground.jpg");
-    /*Cover sizes the background to fill the entire container*/
-    background-size: cover;
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  /*Cover sizes the background to fill the entire container*/
+  /* background-size: cover; */
 }
 
 /*Style each repo(The gray square each repo is contained in)*/
-.repo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(194, 194, 194);
-    width: 450px;
-    /* Give each one a margin to separate them */
-    margin: 35px; 
-    border-radius: 10px; /*Make sure the edges are not sharp*/
+.repo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  border: 3px solid black;
+  /* Give each one a margin to separate them */
+  margin: 35px;
+  border-radius: 10px; /*Make sure the edges are not sharp*/
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.602);
+  transition: 0.5s;
+}
 
+.repo:hover{
+  transform: scale(1.1, 1.1);
 }
 
 /*Resize the images*/
-.projImg{
-    width: 90%;
-    height: auto;
+.projImg {
+  width: 90%;
+  height: auto;
 }
 
 /*Style the link*/
-.repoLink{
-    font-family: var(--font);
-    font-size: 20px;
-    margin-bottom: 15px;
+.repoLink {
+  font-family: var(--font);
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-@media (max-width:600px) {
-    .repo{
-        margin: 0;
-        width: inherit;
-        border-radius: 0;
-    }
+@media (max-width: 600px) {
+  .repo {
+    margin: 1rem;
+    width: 90%;
+    border-radius: 0;
+  }
+
+  #projects{
+    width: 162vw;
+  }
 }

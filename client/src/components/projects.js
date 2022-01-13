@@ -5,7 +5,7 @@ import '../styles/projects.css';
 
 function Projects() {
   /*Create an image array. This will give each repo a picture with the corresponding index in the array. */
-  let imgArr = ["/chatapp.png", "/guessnumber.png", "restaurant.png", "tictac.png", "/yelpington.png", "/zorkington.png"]
+  let imgArr = ["/chatapp.png", "/guessnumber.png", "binderapp.png", "tictac.png", "/yelpington.png", "/zorkington.png"]
   /*gitHubData is the array of repos and setGitHubData is our updater function to change state. 
   Later in the projectList div, gitHubData is looped over using map and each repo in that array will print out its name and description using p tags */
   const [githubData, setGithubData] = useState([])
@@ -46,15 +46,15 @@ function Projects() {
 
             {/* .full_name is a property in githubs API */}
             {(repo.name === "Yelpington-App")?
-              <a href={"https://blooming-lowlands-72131.herokuapp.com/"} target="_blank" className="repoLink">Live Demo</a>
+              <a href={"https://blooming-lowlands-72131.herokuapp.com/"} target="_blank" rel="noopener noreferrer" className="repoLink">Live Demo</a>
             : null}
 
             {(repo.name === "Chat-App")?
-              <a href={"https://limitless-headland-30461.herokuapp.com/"} target="_blank" className="repoLink">Live Demo</a>
+              <a href={"https://limitless-headland-30461.herokuapp.com/"} target="_blank" rel="noopener noreferrer" className="repoLink">Live Demo</a>
             : null}
 
 
-            <a href={"https://github.com/" + repo.full_name} target="_blank" className="repoLink">
+            <a href={"https://github.com/" + repo.full_name} target="_blank" rel="noopener noreferrer" className="repoLink">
               GitHub Link
             </a>
 

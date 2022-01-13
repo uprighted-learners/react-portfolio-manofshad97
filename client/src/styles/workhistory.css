@@ -1,10 +1,10 @@
 /*Style the main title on the workhistory page*/
 .resumeTitle{
-    font-family: var(--font);
+    font-family: Roboto, sans-serif;
     font-size: 50px;
     font-weight: bold;
-    color: white;
     text-align: center;
+    padding-top: 1.8rem;
 }
 
 /*Style each heading on the the resume (Education, Work Exp, etc...)*/
@@ -12,20 +12,27 @@
     font-family: var(--font);
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    
 
 }
+
+.resumeHeading span{
+    cursor: pointer;
+}
+
 /*Style each desription p tag*/
 .resumeDesc{
     width: 100%;
-    color: white;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*Style the intro right below the main title*/
 .resumeIntro{
     font-family: var(--font);
     font-size: 25px;
-    
 
 }
 
@@ -36,14 +43,62 @@
 }
 
 /*Stlye the entire work history container. */
-#workhistory{
-    display: flex;
-    flex-direction: column;
-    padding: 0px 30px;/*Add horizontal padding so that the text is not all the way aligned left*/
-    background-color: rgb(15, 9, 71);
+.downloadButton{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1rem;
+    color: black;
+    transition: 0.5s ease;
+    border-radius: 4%;
+    font-weight: 500;
 }
 
-/*Resize the resume picture. Could not get float to work so had to add an abnormally large right margin*/
+.downloadButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.innerFlex{
+    display: flex;
+    position: relative;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding: 0 2.5rem;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    border: 2px solid black;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: sticky;
+    right: 0;
+    top: 7.125rem;
+    bottom:0;
+}
+
+.rightText{
+    color: white;
+    padding-top: 7rem;
+    font-family: var(--bebas);
+    font-size: 3rem;
+    
+}
+
+.officeGif{
+    width: 80%;
+}
+
+
+/*Resize the resume picture.*/
 .resumeDownload{
 
     width: 300px;
@@ -57,5 +112,36 @@
     align-items: center;
     flex-direction: column;
 }
+
+.fullHeight{
+    height: auto;
+}
+
+.ul{
+    margin: none;
+}
+
+@media (max-width: 600px) {
+    .innerFlex {
+      flex-direction: column;
+    }
+
+    .right{
+        position: relative;
+        background-color: white;
+        border: none;
+
+    }
+
+    .rightText{
+        color: black;
+        text-align: center;
+    }
+  
+    #workhistory{
+      width: 162vw;
+    }
+  }
+
 
 

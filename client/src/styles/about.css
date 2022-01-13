@@ -1,42 +1,101 @@
 /*Make the about div a flexbox and change its background color*/
-#about{
-    display: flex;
-    background-color: rgb(212, 212, 212);
-
+#about {
+  background-color: white;
+  height: 100vh;
+  position: relative;
+  /* border: 3px solid black; */
 }
 
 /*Resize the Beavis gif*/
-.gif{
-    width: 500px;
+.img {
+  margin-top: 160px;
+  width: 350px;
+  border: 3px solid black;
+  transition: 0.5s;
+}
 
+.img:hover{
+  box-shadow: 0 0 30px;
+}
+
+.imgWrapper {
+  /*Changes the width of this wrapper to be 50% of the parent flexbox container*/
+  flex: 40%;
+  text-align: center;
 }
 
 /*Use the font variable created and resize the font*/
 .aboutDesc {
-    font-family: var(--font);
-    font-size: 20px;
-    
-
+  font-family: var(--font);
+  font-size: 20px;
 }
 
 /*Give the title a size, font style, and make it bold*/
-.aboutTitle{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: var(--secondaryFont);
+.aboutTitle {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  /* margin: 0; */
+  text-align: left;
+  padding-top: 20px;
+  margin-top: -33rem;
 }
 
 /*Give the wrapper some horizontal padding*/
-.aboutWrapper{
-    padding: 0px 30px;
+.aboutWrapper {
+  padding: 0px 30px;
+  flex: 60%;
+  margin-top: 30rem;
 }
 
-@media (max-width: 600px){
-    .gif{
-        width: inherit;
-    }
+.aboutFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
 
-    .aboutDesc{
-        text-align: justify;
-    }
+.engineerIconContainer{
+  position: absolute;
+  left: 60%;
+  bottom: 17%;
+}
+
+.engineerIconContainer img{
+  width: 300px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .aboutFlex{
+    flex-direction: column;
+  }
+
+  .aboutWrapper{
+    margin-top: -150px;
+  }
+
+  .aboutDesc {
+    text-align: justify;
+    margin-top: 35rem;
+  }
+
+  .aboutTitle{
+    margin-top: -29rem;
+    text-align: center;
+  }
+
+  #about {
+    height: 190vh;
+    width: 162vw;
+  }
+
+  .imgWrapper{
+    margin-top: -5rem;
+  }
+
+  .engineerIconContainer{
+    left: 28%;
+    bottom: 0;
+  }
 }

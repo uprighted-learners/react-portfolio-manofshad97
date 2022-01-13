@@ -7,14 +7,14 @@ with the same class and an onClick property that runs the scrollTo function when
 
 function Footer() {
 
-    function scrollTo(id) {
-        window.scrollTo({
-            /*Get the element with the provided className using querySelector. Add in the scroll offset. Set the scroll behavior to smooth for a more smooth scrolling experience*/
-            top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset -75,
-            behavior: "smooth"
-        })
+    // function scrollTo(id) {
+    //     window.scrollTo({
+    //         /*Get the element with the provided className using querySelector. Add in the scroll offset. Set the scroll behavior to smooth for a more smooth scrolling experience*/
+    //         top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset -75,
+    //         behavior: "smooth"
+    //     })
 
-    }
+    // }
 
     return (
         // Outter wrapper div
