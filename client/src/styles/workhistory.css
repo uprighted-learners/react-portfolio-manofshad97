@@ -121,6 +121,12 @@
     margin: none;
 }
 
+@media(min-width: 1280px) and (max-width: 1453px){
+    .rightText{
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 600px) {
     .innerFlex {
       flex-direction: column;

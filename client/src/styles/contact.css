@@ -97,7 +97,6 @@ button:hover{
   background-color: black;
 }
 
-
 @media (max-width: 600px) {
   #contact {
     width: 162vw;
