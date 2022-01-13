@@ -42,7 +42,7 @@ function Contact() {
               <li><button type="reset">Clear</button></li>
             </ul>
             <div className='contactGifFlex'>
-            <img className='contactGif' src="contactimage.gif"/>
+            <img className='contactGif' src="contactImage.gif"/>
             </div>
           </form>
         </div>
