@@ -109,7 +109,7 @@ function Hobbies() {
         </div>
         <div className="hobbiesWrapper">
           <div className="stackContainer">
-            <img className="icon" src="/githubIcon.svg" alt="github" />
+            <img className="icon" src="/githubicon.svg" alt="github" />
             <p className="skillName">Github</p>
           </div>
           {/*P tag representing the player description  */}
