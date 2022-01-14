@@ -42,3 +42,9 @@
         width: 162vw;
     }
 }
+
+@media(min-width: 1280px) and (max-width:1281px) and (min-height: 637px) and (max-height: 801px){
+    #footer{
+        display: none;
+    }
+}

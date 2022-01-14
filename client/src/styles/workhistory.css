@@ -124,6 +124,7 @@
 @media(min-width: 1280px) and (max-width: 1453px){
     .rightText{
         font-size: 2.5rem;
+        margin-top: -2rem;
     }
 }
 
