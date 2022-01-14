@@ -68,7 +68,7 @@
 
 @media(min-width: 1280px) and (max-width: 1550px){
   .engineerIconContainer{
-    bottom: 1%;
+    display: none;
   }
 }
 
