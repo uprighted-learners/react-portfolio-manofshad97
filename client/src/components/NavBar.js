@@ -25,18 +25,20 @@ function NavBar() {
 
     }
 
-    function myFunction() {
+    function toggleMobileHamburgerMenu($event) {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
             x.style.display = "none";
         } else {
             x.style.display = "block";
         }
+
+        $event.target.closest('.topnavMobile').classList.toggle('expanded')
     }
 
     return (
-        <div>
-            <div id="nav" className="outterWrapper">
+        <div className='navPrime'>
+            <div id="nav" className="navDesktop">
 
                 <div className="navWrapper">
                     {/* Div that holds the social links anchor tags. Each one contains a link to a social media website and contains an svg. Target is set to _blank in order to open in a new tab when clicked. */}
@@ -64,12 +66,12 @@ function NavBar() {
 
                     {/* Create a navbar div with p tags for navbar tabs. Give all p tags the same className for styling and give them an onClick to run the scrollTo function when clicked. */}
                     <div className="navLinks">
-                        <p className="pageName" onClick={() => scrollTo("#home")} href="/">Home</p>
-                        <p className="pageName" onClick={() => scrollTo("#about")} href="/about">About</p>
-                        <p className="pageName" onClick={() => scrollTo("#projects")} href="/projects">Projects</p>
-                        <p className="pageName" onClick={() => scrollTo("#workhistory")} href="/workhistory">WorkHistory</p>
-                        <p className="pageName" onClick={() => scrollTo("#hobbies")} href="/hobbies">Tech Stack</p>
-                        <p className="pageName" onClick={() => scrollTo("#contact")} href="/contact">Contact</p>
+                        <a className="pageName" onClick={() => scrollTo("#home")} data-href="/">Home</a>
+                        <a className="pageName" onClick={() => scrollTo("#about")} data-href="/about">About</a>
+                        <a className="pageName" onClick={() => scrollTo("#projects")} data-href="/projects">Projects</a>
+                        <a className="pageName" onClick={() => scrollTo("#workhistory")} data-href="/workhistory">WorkHistory</a>
+                        <a className="pageName" onClick={() => scrollTo("#hobbies")} data-href="/hobbies">Tech Stack</a>
+                        <a className="pageName" onClick={() => scrollTo("#contact")} data-href="/contact">Contact</a>
                     </div>
                 </div>
 
@@ -78,17 +80,17 @@ function NavBar() {
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             
             <div className="whiteSpace"></div>
-            <div className="topnav">
+            <div className="topnavMobile">
                 <a class="active"><img className="logoIcon" src="/newlogo.svg" alt="Logo Icon" /></a>
                 <div id="myLinks">
-                    <p className="pageName" onClick={() => scrollToMobile("#home")} href="/">Home</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#about")} href="/about">About</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#projects")} href="/projects">Projects</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#workhistory")} href="/workhistory">WorkHistory</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#hobbies")} href="/hobbies">Tech Stack</p>
-                    <p className="pageName" onClick={() => scrollToMobile("#contact")} href="/contact">Contact</p>
+                    <a className="pageName" onClick={() => scrollToMobile("#home")} data-href="/">Home</a>
+                    <a className="pageName" onClick={() => scrollToMobile("#about")} data-href="/about">About</a>
+                    <a className="pageName" onClick={() => scrollToMobile("#projects")} data-href="/projects">Projects</a>
+                    <a className="pageName" onClick={() => scrollToMobile("#workhistory")} data-href="/workhistory">WorkHistory</a>
+                    <a className="pageName" onClick={() => scrollToMobile("#hobbies")} data-href="/hobbies">Tech Stack</a>
+                    <a className="pageName" onClick={() => scrollToMobile("#contact")} data-href="/contact">Contact</a>
                 </div>
-                <a href="javascript:void(0);" class="icon" onClick={() => myFunction()}>
+                <a href="javascript:void(0);" class="icon hamburger" onClick={toggleMobileHamburgerMenu}>
                     <i class="fa fa-bars"></i>
                 </a>
             </div>

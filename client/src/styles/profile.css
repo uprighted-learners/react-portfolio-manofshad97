@@ -1,0 +1,88 @@
+@media (max-width: 600px) {
+  .mobile {
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 162vh;
+    width: 100%;
+    margin-top: 11rem;
+    justify-content: flex-start;
+  }
+
+  .profileImg {
+    width: none;
+    order: -1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .introText {
+    --fs-default: 1.4rem;
+    width: 100vw;
+    font-size: var(--fs-default);
+    padding: 1.4rem;
+    box-sizing: border-box;
+    font-weight: 600;
+  }
+
+  .introText > * {
+    all: unset;
+  }
+
+  .headerDesc {
+    display: block;
+    opacity: 0;
+    animation: fadein 4s forwards;
+    animation-delay: 3s;
+  }
+
+  .bottomDesc {
+    display: block;
+  }
+
+  .topDesc {
+    left: 4.5rem;
+  }
+
+  .dynamicDesc {
+    width: unset;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    opacity: 0;
+    animation: fadein 4s forwards;
+    animation-delay: 4.7s;
+    --height: 35px;
+  }
+
+  .dynamicDesc li {
+    font-size: var(--fs-default);
+  }
+
+  .name {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    font-size: 1.8rem;
+    opacity: 0;
+    animation: fadein 4s forwards;
+    animation-delay: 1.5s;
+  }
+
+  .description {
+      opacity: 0;
+    animation: fadein 4s forwards;
+    animation-delay: 4.7s;
+  }
+
+  .arrow {
+    position: initial;
+  }
+
+  @keyframes fadein {
+    
+    100% {
+      opacity: 1;
+    }
+  }
+}

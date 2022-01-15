@@ -6,7 +6,7 @@
   padding: 10px 0px; /*Vertical and horizontal*/
 }
 
-#nav.outterWrapper {
+#nav.navDesktop {
   position: fixed;
   width: 100%;
   /*The layer that this element is in*/
@@ -112,7 +112,7 @@
   display: none;
 }
 
-.topnav {
+.topnavMobile {
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -123,7 +123,7 @@
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+.topnavMobile #myLinks {
   display: none;
   width: 100%;
   background-color: white;
@@ -137,17 +137,16 @@
 }
 
 /* Style navigation menu links */
-.topnav a {
+.topnavMobile a {
   color: black;
   padding: 0 1rem;
   text-decoration: none;
-  display: block;
   font-size: 2rem;
   height: 3rem;
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+.topnavMobile a.icon {
   display: block;
   position: absolute;
   right: 1rem;
@@ -160,6 +159,10 @@
 
 #myLinks {
   text-align: center;
+}
+
+#myLinks> a {
+  display: block;
 }
 
 .logoTitle{
@@ -178,17 +181,20 @@
   #nav {
     display: none;
   }
-  .topnav {
+  .topnavMobile {
     display: block;
-    margin: 0;
+    /* margin: 0;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
-    height: 28rem;
+    bottom: 0; */
     overflow: auto;
     z-index: 9999;
     font-size: 1.8rem;
+  }
+
+  .topnavMobile.expanded {
+    height: 28rem;
   }
 
   .whiteSpace{

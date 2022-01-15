@@ -69,8 +69,9 @@
 
 .dynamicDesc {
   /* margin-left: 15px; */
-  height: 90px;
-  line-height: 90px;
+  --height: 90px;
+  height: var(--height);
+  line-height: var(--height);
   overflow: hidden;
   background: white;
   width: 30rem;
@@ -121,21 +122,22 @@
 
 @keyframes slide {
   100% {
-    top: -450px;
+    top: calc( var(--height) * -5 );
   }
 }
 
 .dynamicDesc li span {
   position: relative;
   margin: 5px 0;
-  line-height: 90px;
+  line-height:var(--height);
 }
 
 .dynamicDesc span::after {
   content: '';
   position: absolute;
-  padding-top: 1.5rem;
+  /* padding-top: 1.5rem; */
   left: 0;
+  bottom:0;
   height: 100%;
   width: 100%;
   background: white;
@@ -204,53 +206,7 @@
 }
 
 @media (max-width: 600px) {
-  .mobile {
-    flex-direction: column;
-    /* border: 2px solid black; */
-    height: 162vh;
-    width: 162vw;
+  html,body {
+    width: 100%;
   }
-
-  .profileImg{
-    margin: -70rem 0 0 0;
-    z-index: 999;
-    width: 27rem;
-  }
-
-  .introText {
-    width: 100vw;
-    margin-top: -18rem;
-    margin-left: -18rem;
-
-  }
-
-  .headerDesc{
-    width: 36rem;
-    margin-left: 1rem;
-  }
-
-  .bottomDesc{
-    width: 36rem;
-    margin-left: 0.3rem;
-  }
-
-  .name{
-    margin: 0;
-    font-size: 3rem;
-    margin-left: -0.7rem;
-  }
-
-  .topDesc{
-    left: 4.5rem;
-  }
-
-  .wrapper{
-    margin-left: 1.1rem;
-  }
-
-  /* .name,
-  .description {
-    text-align: center;
-    text-shadow: 3px 3px black;
-  } */
 }
