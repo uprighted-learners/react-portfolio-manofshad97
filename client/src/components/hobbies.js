@@ -20,7 +20,7 @@ function Hobbies() {
         {/* Give each hobby its own wrapper div */}
         <div className="hobbiesWrapper">
           {/* Image for Robert Lewandowski, the icon player */}
-          <div className="stackContainer">
+          <div className="stackContainer" style={{marginLeft: '3px'}}>
             <img className="icon" src="/jsIcon.svg" alt="js" />
             <p className="skillName">Javascript</p>
           </div>
@@ -120,7 +120,7 @@ function Hobbies() {
 
           <div className="stackContainer">
             <img className="icon api" src="/apiint.png" alt="api" />
-            <p className="skillName">API Integration</p>
+            <p className="skillName">API</p>
           </div>
 
           <div className="stackContainer">

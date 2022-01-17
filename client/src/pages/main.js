@@ -36,7 +36,6 @@ function Main() {
       <WorkHistory />
       <Hobbies />
       <Contact />
-
       <Footer />
     </div>
   )

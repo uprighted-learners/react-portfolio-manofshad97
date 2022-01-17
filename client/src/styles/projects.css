@@ -1,7 +1,7 @@
 /*Style the p tag containing the repo name*/
 .repoName {
   font-family: var(--font);
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 /*Style the p tag containing the repo description*/
@@ -14,7 +14,7 @@
 /*Style the main title on the projects section*/
 .projectTitle {
   font-family: Roboto, sans-serif;
-  font-size: 50px;
+  font-size: 3.12rem;
   font-weight: bold;
   color: black;
 }
@@ -64,7 +64,7 @@
 /*Style the link*/
 .repoLink {
   font-family: var(--font);
-  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
@@ -82,6 +82,10 @@
   }
 
   #projects{
-    width: 162vw;
+    width: 100%;
+  }
+
+  .projectTitle{
+    font-size: 2.3rem;
   }
 }

@@ -12,7 +12,7 @@
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.12rem;
   padding-top: 1.3rem;
 }
 
@@ -41,13 +41,14 @@
   width: 100%;
   height: auto;
   justify-content: center;
+  gap: 0.8rem;
 }
 
 .stackContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .skillName {
@@ -92,11 +93,12 @@
 @media (max-width: 600px) {
 
   .skillType{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .skillName{
     font-weight: bold;
+    font-size: 0.79rem;
   }
 
   .node + p,
@@ -114,7 +116,7 @@
   }
 
   #hobbies {
-    width: 162vw;
+    width: 100%;
     margin-top: 10rem;
   }
 
@@ -141,5 +143,19 @@
 
   .api + p{
       margin-top: 0.5rem;
+  }
+
+  .hobbiesTitle{
+    font-size: 2.3rem;
+    padding-top: unset;
+    margin-top: -0.2rem;
+  }
+
+  .hobbiesDesc{
+    display: none;
+  }
+
+  .mainFlex{
+    margin-top: -6.6rem;
   }
 }

@@ -18,10 +18,11 @@ function NavBar() {
     function scrollToMobile(id) {
         window.scrollTo({
             /*Get the element with the provided className using querySelector. Add in the scroll offset*/
-            top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - 50,
+            top: document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - 47,
             behavior: "smooth"
         })
         document.getElementById("myLinks").style.display = "none";
+        document.getElementById("myLinks").closest('.topnavMobile').classList.toggle('expanded')
 
     }
 
@@ -82,6 +83,9 @@ function NavBar() {
             <div className="whiteSpace"></div>
             <div className="topnavMobile">
                 <a class="active"><img className="logoIcon" src="/newlogo.svg" alt="Logo Icon" /></a>
+                <a href="javascript:void(0);" class="icon hamburger" onClick={toggleMobileHamburgerMenu}>
+                    <i class="fa fa-bars"></i>
+                </a>
                 <div id="myLinks">
                     <a className="pageName" onClick={() => scrollToMobile("#home")} data-href="/">Home</a>
                     <a className="pageName" onClick={() => scrollToMobile("#about")} data-href="/about">About</a>
@@ -90,9 +94,6 @@ function NavBar() {
                     <a className="pageName" onClick={() => scrollToMobile("#hobbies")} data-href="/hobbies">Tech Stack</a>
                     <a className="pageName" onClick={() => scrollToMobile("#contact")} data-href="/contact">Contact</a>
                 </div>
-                <a href="javascript:void(0);" class="icon hamburger" onClick={toggleMobileHamburgerMenu}>
-                    <i class="fa fa-bars"></i>
-                </a>
             </div>
         </div>
 

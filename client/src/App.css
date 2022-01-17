@@ -7,9 +7,11 @@
 :root{
     --font:"Noto Sans TC";
     --secondaryFont:"Montserrat";
-    --bebas: "Bebas Neue"
+    --bebas: "Bebas Neue";
+    
 }
 
-* {
-    border: 1px solid;
+@media (max-width: 600px){
+    font-size: 8px;
 }
+

@@ -141,7 +141,7 @@
   color: black;
   padding: 0 1rem;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.1rem;
   height: 3rem;
 }
 
@@ -149,7 +149,7 @@
 .topnavMobile a.icon {
   display: block;
   position: absolute;
-  right: 1rem;
+  right: 0.2rem;
   top: 0;
   width: 1rem;
   height: 1rem;

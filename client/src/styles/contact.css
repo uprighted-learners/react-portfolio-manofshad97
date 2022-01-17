@@ -17,7 +17,7 @@
 #contact legend {
   display: block;
   text-align: center;
-  font-size: 50px;
+  font-size: 3.12rem;
   font-family: Roboto, sans-serif;
   font-weight: bold;
   margin-bottom: 30px;
@@ -100,29 +100,39 @@ button:hover{
 
 @media (max-width: 600px) {
   #contact {
-    width: 162vw;
-    margin-top: 20rem;
+    width: 100%;
+    /* margin-top: 20rem; */
+    height: auto
+  }
+
+  #contact legend{
+    font-size: 2.3rem;
+  }
+
+  #contact label{
+    font-size: 0.8rem;
+  }
+
+  #contact textarea{
+    height: 8rem;
   }
 
   .nameDiv {
     margin-right: 2rem;
   }
 
-  .inner {
-    margin-top: -20rem;
-  }
-
-  .fields {
-    margin-top: 7rem;
-  }
 
   .contactGif{
-    position: absolute;
-    top: 10rem;
-    height: 15rem;
+    position: relative;
+    height: 9rem;
+    
   }
 
   label{
     font-size: 1.3rem;
+  }
+
+  .actions button{
+    font-size: 12px;
   }
 }

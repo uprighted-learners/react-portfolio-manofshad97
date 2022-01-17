@@ -2,21 +2,21 @@
   .mobile {
     flex-direction: column;
     /* border: 2px solid black; */
-    height: 162vh;
+    height: auto;
     width: 100%;
-    margin-top: 11rem;
+    margin-top: 3rem;
     justify-content: flex-start;
   }
 
   .profileImg {
-    width: none;
+    width: 12rem;
     order: -1;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2rem;
   }
 
   .introText {
-    --fs-default: 1.4rem;
     width: 100vw;
     font-size: var(--fs-default);
     padding: 1.4rem;
@@ -33,6 +33,8 @@
     opacity: 0;
     animation: fadein 4s forwards;
     animation-delay: 3s;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   .bottomDesc {
@@ -52,6 +54,8 @@
     animation: fadein 4s forwards;
     animation-delay: 4.7s;
     --height: 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   .dynamicDesc li {
@@ -70,9 +74,11 @@
   }
 
   .description {
-      opacity: 0;
+    opacity: 0;
     animation: fadein 4s forwards;
     animation-delay: 4.7s;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   .arrow {
@@ -80,9 +86,12 @@
   }
 
   @keyframes fadein {
-    
     100% {
       opacity: 1;
     }
+  }
+
+  .arrow img{
+    width: 60px;
   }
 }
