@@ -7,7 +7,7 @@ function WorkHistory() {
     let element = document.querySelector(id)
     element.classList.toggle('fullHeight')
     let elementSign = document.querySelector(id + 'Sign')
-    elementSign.innerText = elementSign.innerText == '-' ? '+' : '-'
+    elementSign.innerText = elementSign.innerText === '-' ? '+' : '-'
   }
 
   return (
@@ -119,7 +119,7 @@ function WorkHistory() {
             <p className="resumeHeading">
               Download my resume by clicking on the button below:
             </p>
-            <a className="downloadButton" href="/shadman's_resume.docx" download>
+            <a className="downloadButton" href="/shadman's_resume (2).docx" download>
               Download Resume
             </a>
           </div>
