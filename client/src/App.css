@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
 
 
-/*The root holds variables that will be used later. These variables were created to hold fonts imported from google's font api*/
+/*The root holds variables that will be used later. These variables were created to hold fonts imported from google's font api.*/
 :root{
     --font:"Noto Sans TC";
     --secondaryFont:"Montserrat";
